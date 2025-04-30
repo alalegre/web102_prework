@@ -23,7 +23,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://imgur.com/a/9IJeyWG' title='CodePath Prework' width='' alt='CodePath Prework' />
+<img src='https://i.imgur.com/a/hX61Wf7.gif' title='CodePath Prework' width='' alt='CodePath Prework' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LICEcap for Windows (https://www.cockos.com/licecap/) 
