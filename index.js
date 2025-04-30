@@ -46,6 +46,7 @@ function addGamesToPage(games) {
             <img src="${games[i].img}" class="game-img">
             <h1>${games[i].name}</h1>
             <p>${games[i].description}</p>
+            <p>Backers: ${games[i].backers}</p>
         </div>
         `;
 
@@ -168,7 +169,10 @@ const unfundedNum = GAMES_JSON.filter(game => game.pledged < game.goal).length;
 const displayStr = `A total of \$${total.toLocaleString('en-US')} has been raised for 11 games. Currently, ${unfundedNum} ${unfundedNum == 1 ? "game remains" : "games remain"} unfunded. We need your help funding these games!`;
 
 // create a new DOM element containing the template string and append it to the description container
-descriptionContainer.innerHTML = displayStr;
+const descriptionParagraph = document.createElement("p");
+descriptionParagraph.innerText = displayStr;
+descriptionContainer.appendChild(descriptionParagraph);
+
 
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
